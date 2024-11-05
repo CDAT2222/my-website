@@ -1,17 +1,17 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Verdana', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8;
-    color: #333;
+    background: linear-gradient(135deg, #1a1a1a, #3e3e3e);
+    color: #f0f0f0;
 }
 
 header {
-    background: #4A90E2;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFD700;
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 nav {
@@ -19,7 +19,7 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #FFD700;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
@@ -27,11 +27,13 @@ nav a {
 }
 
 nav a:hover {
-    color: #FFD700;
+    color: #FF4500;
+    text-shadow: 0 0 10px rgba(255, 69, 0, 0.7);
 }
 
 h1, h2 {
     margin: 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 main {
@@ -41,11 +43,12 @@ main {
 }
 
 form {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     margin-top: 20px;
+    backdrop-filter: blur(10px);
 }
 
 label {
@@ -60,38 +63,41 @@ input[type="password"] {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #555;
     border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
     transition: border 0.3s;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
-    border-color: #4A90E2;
+    border-color: #FFD700;
     outline: none;
 }
 
 button {
-    background: #4A90E2;
+    background: #FF4500;
     color: #fff;
     border: none;
     padding: 12px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background: #357ABD;
+    background: #FF6347;
+    transform: scale(1.05);
 }
 
 footer {
     text-align: center;
     padding: 15px 0;
-    background: #4A90E2;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFD700;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -105,7 +111,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #555;
 }
 
 th, td {
@@ -114,6 +120,6 @@ th, td {
 }
 
 th {
-    background: #4A90E2;
+    background: rgba(255, 69, 0, 0.5);
     color: #fff;
 }
